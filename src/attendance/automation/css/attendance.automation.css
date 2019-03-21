@@ -1,11 +1,25 @@
 .root{
-    
-    
+    -fx-text-fill: #fdbe0e; 
+    -fx-prompt-text-fill: white;
 }
 
 .tree-table-view .tree-table-cell{
     -fx-alignment: CENTER;
     
 }
+
+.jfx-button{
+    
+}
+
+#closeWindow{
+    
+}
+
+#minimizeWindow{
+    
+}
+
+
 
 
