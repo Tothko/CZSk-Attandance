@@ -12,7 +12,7 @@
 
 <AnchorPane fx:id="loginWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="352.0" prefWidth="324.0" style="-fx-border-color: grey; -fx-border-width: 3;" stylesheets="@../../css/attendance.automation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="attendance.automation.gui.controller.LoginViewController">
    <children>
-      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="93.0" layoutY="216.0" onAction="#loginMethod" opacity="0.91" prefHeight="37.0" prefWidth="400.0" ripplerFill="#3e1cb9" style="-fx-background-color: #313131;" text=" " textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <JFXButton fx:id="btnLogin" buttonType="RAISED" layoutX="-3.0" layoutY="1.0" onAction="#loginMethod" opacity="0.91" prefHeight="352.0" prefWidth="324.0" ripplerFill="#3e1cb9" styleClass="root" text=" " textAlignment="CENTER" textOverrun="LEADING_WORD_ELLIPSIS" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -24,14 +24,24 @@
       </ImageView>
       <JFXTextField fx:id="loginField" alignment="CENTER" focusColor="#00aeec" layoutX="93.0" layoutY="115.0" promptText="Login/Email" styleClass="root" stylesheets="@../../css/attendance.automation.css" AnchorPane.bottomAnchor="200.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" />
       <JFXPasswordField fx:id="passwordField" alignment="CENTER" focusColor="#00aeec" layoutX="95.0" layoutY="164.0" promptText="Password" styleClass="root" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" />
-      <JFXButton id="kurwaxd" fx:id="btnExit" layoutX="289.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#closeWindow" prefHeight="21.0" prefWidth="21.0" ripplerFill="#ee1a1a" style="-fx-background-image: ..\..\gui\images\close.png;" styleClass="btnExitClass" text=" " />
       <Label layoutX="45.0" layoutY="60.0" />
       <Label layoutX="35.0" layoutY="110.0" />
       <JFXButton layoutX="91.0" layoutY="307.0" onAction="#forgotPasswordButt" prefHeight="31.0" prefWidth="142.0" styleClass="root" text="Forgot password?" underline="true" AnchorPane.bottomAnchor="16.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
          <font>
             <Font name="Calibri" size="15.0" />
          </font></JFXButton>
-      <JFXButton fx:id="btnMinimize" layoutX="262.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimizeButton" prefHeight="21.0" prefWidth="21.0" ripplerFill="#16a101" style="-fx-background-image: ..\..\gui\images\minimize.png;" text=" " />
       <JFXToggleButton fx:id="rememberUsernameCheckBox" layoutX="75.0" layoutY="253.0" styleClass="root" text="Remember me" toggleColor="#fdbe0e" toggleLineColor="#ebbc3b" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0" />
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="23.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="246.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@../images/minimize.png" />
+         </image>
+      </ImageView>
+      <JFXButton id="closeWindow" fx:id="btnExit" layoutX="294.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#closeWindow" prefHeight="32.0" prefWidth="32.0" ripplerFill="#ee1a1a" stylesheets="@../../css/attendance.automation.css" text=" " AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <JFXButton id="minimizeWindow" fx:id="btnMinimize" layoutX="262.0" layoutY="14.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onAction="#minimizeButton" prefHeight="32.0" prefWidth="32.0" ripplerFill="#16a101" stylesheets="@../../css/attendance.automation.css" text=" " AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="0.0" />
    </children>
 </AnchorPane>

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import com.jfoenix.controls.JFXButton?>
-<?import java.net.URL?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
@@ -9,10 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="448.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
-    <stylesheets>
-        <URL value="@/attendance/automation/css/calendar.css" />
-    </stylesheets>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="448.0" styleClass="root" stylesheets="@../../css/attendance.automation.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <GridPane fx:id="GridCalendar" layoutX="14.0" layoutY="72.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" nodeOrientation="LEFT_TO_RIGHT" prefHeight="327.0" prefWidth="423.0">
         <columnConstraints>
@@ -42,7 +38,7 @@
             <Font name="System Italic" size="21.0" />
          </font>
       </Label>
-      <JFXButton fx:id="buttonPreviousMonth" layoutX="68.0" layoutY="15.0" onAction="#pressButtonPreviousMonth" style="-fx-border-color: grey;" text="&lt;" />
-      <JFXButton fx:id="buttonNextMonth" layoutX="347.0" layoutY="15.0" onAction="#pressButtonNextMonth" style="-fx-border-color: grey;" text="&gt;" />
+      <JFXButton fx:id="buttonPreviousMonth" layoutX="68.0" layoutY="15.0" onAction="#pressButtonPreviousMonth" style="-fx-border-color: grey;" styleClass="root" text="&lt;" />
+      <JFXButton fx:id="buttonNextMonth" layoutX="347.0" layoutY="15.0" onAction="#pressButtonNextMonth" style="-fx-border-color: grey;" styleClass="root" text="&gt;" />
    </children>
 </AnchorPane>

@@ -1,6 +1,8 @@
 .root{
-    -fx-text-fill: #fdbe0e; 
-    -fx-prompt-text-fill: white;
+    -fx-text-fill: #ebb140; /*EASV Yellow*/
+    -fx-prompt-text-fill: #00b0eb; /*EASV Blue*/
+    -fx-background-color: #313131
+        ;
 }
 
 .tree-table-view .tree-table-cell{
@@ -9,14 +11,6 @@
 }
 
 .jfx-button{
-    
-}
-
-#closeWindow{
-    
-}
-
-#minimizeWindow{
     
 }
 

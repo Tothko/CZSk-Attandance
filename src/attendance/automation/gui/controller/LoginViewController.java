@@ -8,6 +8,8 @@ package attendance.automation.gui.controller;
 import attendance.automation.bll.AAManager;
 import attendance.automation.dal.DALException;
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXToggleButton;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -35,6 +37,11 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundImage;
+import javafx.scene.layout.BackgroundPosition;
+import javafx.scene.layout.BackgroundRepeat;
+import javafx.scene.layout.BackgroundSize;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -64,7 +71,7 @@ public class LoginViewController implements Initializable {
     @FXML
     private AnchorPane loginWindow;
     @FXML
-    private CheckBox rememberUsernameCheckBox;
+    private JFXToggleButton rememberUsernameCheckBox;
     
     Preferences preferences;
     @FXML
@@ -78,7 +85,6 @@ public class LoginViewController implements Initializable {
         } catch (IOException ex) {
             Logger.getLogger(LoginViewController.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
         fadeIn(btnExit);
         fadeIn(btnLogin);
         fadeIn(pic);
@@ -142,12 +148,10 @@ public class LoginViewController implements Initializable {
         }
     }
     
-    @FXML
     private void loginStudent(ActionEvent event) throws DALException, IOException, BackingStoreException {
         login("JanToth", "1234");
     }
     
-    @FXML
     private void loginTeacher(ActionEvent event) throws DALException, IOException, BackingStoreException {
         login("MarekStancik", "cplusplus");
     }
@@ -171,7 +175,6 @@ public class LoginViewController implements Initializable {
         stage.setIconified(true);
     }
 
-    @FXML
     private void enterNext(KeyEvent event)
     {
         if (event.getCode() == KeyCode.ENTER)
@@ -180,7 +183,6 @@ public class LoginViewController implements Initializable {
         }
     }
 
-    @FXML
     private void enterLogIn(KeyEvent event) throws DALException, IOException, BackingStoreException
     {
         if (event.getCode() == KeyCode.ENTER)
